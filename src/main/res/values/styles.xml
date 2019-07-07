@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green_bg</item>
+        <item name="colorPrimaryDark">@color/green_bg</item>
+        <item name="android:textColorPrimary">@color/secondary_text</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Toolbar Theme / Apply white arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!--Navigation icon颜色设置-->
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+    </style>
+
+    <!--加入一個新的 navigation drawer 的風格-->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--將 spinBars 屬性設定為 false-->
+        <item name="spinBars">false</item>
+        <!--設定 drawer arrow 的顏色-->
+        <item name="color">@android:color/white</item>
+        <!--圆形图片的设定-->
+    </style>
+
+    <style name="HomeTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/dimen_12sp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <style name="TabText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@drawable/toolbar_text_selector</item>
+    </style>
+
+    <style name="BottomPopupDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:animation">@style/AnimBottomPopupDialog</item>-->
+    </style>
+
+    <style name="AnimBottomPopupDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fw_photo_menu_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/fw_photo_menu_dialog_out</item>
+    </style>
+
+    <style name="AnimBottomPopupDialogBig" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/fw_photo_menu_dialog_in_big</item>
+        <item name="android:windowExitAnimation">@anim/fw_photo_menu_dialog_out_big</item>
+    </style>
+
+    <style name="CusLauncherUITheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:windowBackground">@drawable/login_bg</item>-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ui_comm_bg_color">#FFFFFF</color><!-- 界面统一背景色 -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="result_view">#b0000000</color>
+    <drawable name="back_b">@android:color/transparent</drawable>
+    <drawable name="back_a">#33000000</drawable>
+
+    <!--toolBar颜色-->
+    <color name="green_bg">#30d38f</color>
+    <color name="register">#fd464b</color>
+    <color name="not_psd">#000</color>
+
+    <!--设置tab按钮-->
+    <color name="concern_bg">#f94645</color>
+
+    <!--关于导航的颜色-->
+    <color name="gray_1">#C8C8C8</color>
+    <color name="gray_line">#E4E4E4</color>
+    <color name="secondary_text">#999999</color>
+
+    <!-- Bottom Navigation -->
+    <color name="accent_bottom_navigation">#FF6A6A</color>
+    <color name="inactive_bottom_navigation">#9b9b9b</color>
+
+    <color name="grey">#888888</color>
+    <color name="red">#ff0000</color>
+
+    <color name="black">#000</color>
+    <color name="default_view">#efefef</color>
+    <color name="bg_white">#fff</color>
+    <color name="light_gray">#f3f3f3</color>
+    <color name="dark_gray">#8b8b8b</color>
+    <color name="dark_gray_txt">#ff8c8c8c</color>
+
+    <color name="tran_black">#66000000</color>
+    <color name="light_tran_black">#33000000</color>
+    <color name="light_pink">#feeeec</color>
+    <color name="pink">#F99CAE</color>
+    <color name="light_black">#A8A8A8</color>
+</resources>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_comm_bg_color">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/note_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/only_wifi_use"
+                    android:textColor="@color/not_psd"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <Button
+                    android:id="@+id/only_wifi_load_switch"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_15dp"
+                    android:background="@drawable/switch_open" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/fourG_loading_tips"
+                    android:textColor="@color/not_psd"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/no_wifi_tip_switch"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_15dp"
+                    android:background="@drawable/switch_open" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <LinearLayout
+                android:id="@+id/rl_concern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/system_message"
+                    android:textColor="@color/not_psd"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <Button
+                    android:id="@+id/send_message_switch"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_15dp"
+                    android:background="@drawable/switch_open" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/video_auto_play"
+                    android:textColor="@color/not_psd"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <Button
+                    android:id="@+id/auto_play_free_video_switch"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_15dp"
+                    android:background="@drawable/switch_open" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <TextView
+                android:id="@+id/account_safe_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:drawableEnd="@drawable/arrows_right"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:text="@string/safe_account"
+                android:textColor="@color/not_psd"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <TextView
+                android:id="@+id/del_cache_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:drawableEnd="@drawable/arrows_right"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:text="@string/clear_cache"
+                android:textColor="@color/not_psd"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <TextView
+                android:id="@+id/about_me_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:drawableEnd="@drawable/arrows_right"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:text="@string/about_me_title"
+                android:textColor="@color/not_psd"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <TextView
+                android:id="@+id/feedback_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:drawableEnd="@drawable/arrows_right"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp"
+                android:text="@string/feedback"
+                android:textColor="@color/not_psd"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:background="@color/default_view" />
+
+            <LinearLayout
+                android:id="@+id/version_update_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_20dp"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/version_manage"
+                    android:textColor="#000"
+                    android:textSize="@dimen/dimen_15sp" />
+
+                <TextView
+                    android:id="@+id/version_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_15dp"
+                    android:text="V1.0.0"
+                    android:textColor="@color/not_psd"
+                    android:textSize="@dimen/dimen_15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100dp"
+                android:background="@color/default_view" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green_bg"
+        android:text="@string/logout"
+        android:textColor="@color/default_view"
+        android:textSize="@dimen/dimen_16sp" />
+</RelativeLayout>

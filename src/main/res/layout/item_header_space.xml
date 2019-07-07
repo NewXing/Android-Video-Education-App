@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_5dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:paddingStart="@dimen/dimen_20dp">
+
+        <education.juxin.com.educationpro.view.CircleImageView
+            android:id="@+id/teacher_header_img"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="@dimen/dimen_45dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/teacher_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:text="TRO BEYOND"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_concerns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/login"
+            android:paddingBottom="@dimen/dimen_5dp"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_5dp"
+            android:text="已关注"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/dimen_13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/gray_line" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        app:indicator_height="@dimen/dimen_8dp"
+        app:indicator_width="@dimen/dimen_8dp"
+        app:indicator_margin="@dimen/dimen_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_175dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/gray_line" />
+</LinearLayout>

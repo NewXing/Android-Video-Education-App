@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_125dp"
+    android:layout_height="@dimen/dimen_160dp"
+    android:layout_margin="@dimen/dimen_3dp"
+    android:background="@drawable/item_bg_shape">
+
+    <education.juxin.com.educationpro.view.CircleImageView
+        android:id="@+id/teacher_header_img"
+        android:layout_width="@dimen/dimen_65dp"
+        android:layout_height="@dimen/dimen_65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_25dp" />
+
+    <TextView
+        android:id="@+id/teacher_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_header_img"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:textColor="@color/not_psd"
+        android:textSize="@dimen/dimen_14sp" />
+
+    <TextView
+        android:id="@+id/teacher_character_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_name_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/dimen_13sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/teacher_nickname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_character_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/dimen_13sp"
+        android:visibility="gone" />
+</RelativeLayout>

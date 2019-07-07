@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/media_controller_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_40dp"
+    android:background="@color/tran_black"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/play_img_btn"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:background="@android:color/transparent" />
+
+    <SeekBar
+        android:id="@+id/progress_seekBar"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/curr_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="/"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <TextView
+        android:id="@+id/all_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_12sp" />
+
+    <CheckBox
+        android:id="@+id/all_screen_checkbox"
+        android:layout_width="@dimen/dimen_18dp"
+        android:layout_height="@dimen/dimen_18dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:background="@drawable/selector_player"
+        android:button="@null" />
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_person_data"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:paddingEnd="@dimen/dimen_15dp"
+    android:paddingStart="@dimen/dimen_25dp"
+    android:paddingTop="@dimen/dimen_10dp">
+
+    <education.juxin.com.educationpro.view.RoundImageView
+        android:id="@+id/collect_book_img"
+        android:layout_width="@dimen/dimen_120dp"
+        android:layout_height="@dimen/dimen_80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dy_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/collect_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10dp"
+           android:layout_marginBottom="@dimen/dimen_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/course_time"
+                android:textSize="@dimen/dimen_13sp" />
+
+            <TextView
+                android:id="@+id/tv_time_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/dimen_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

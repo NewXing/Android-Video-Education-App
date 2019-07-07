@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dimen_15dp"
+        android:paddingEnd="@dimen/dimen_15dp"
+        android:text="@string/share_to"
+        android:textColor="@color/not_psd"
+        android:textSize="@dimen/dimen_17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_30dp"
+        android:paddingTop="@dimen/dimen_30dp">
+
+        <TextView
+            android:id="@+id/tv_wechat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/weixin_big"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:text="@string/wechat"
+            android:textColor="@color/not_psd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_friends_circle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/friends_circle"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:text="@string/friends_circle"
+            android:textColor="@color/not_psd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/qq"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:text="@string/qq"
+            android:textColor="@color/not_psd"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_sina"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/sina"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:text="@string/sina"
+            android:textColor="@color/not_psd"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/share_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="@color/green_bg"
+        android:text="@string/cancel"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_17sp" />
+</LinearLayout>

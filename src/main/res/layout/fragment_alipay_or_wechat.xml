@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deposit_alipay"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/pay_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:drawableEnd="@drawable/arrows_right"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:text="支付宝(18340462371)"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@color/bg_white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deposit_money"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp" />
+
+            <education.juxin.com.educationpro.view.FitScrollGridView
+                android:id="@+id/price_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:columnWidth="@dimen/dimen_75dp"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="@dimen/dimen_10dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="auto_fit"
+                android:padding="@dimen/dimen_10dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/dimen_10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@color/bg_white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/matter_attention"
+                android:textColor="@color/concern_bg"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <TextView
+                android:id="@+id/tv_nothing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="1.提现时请先完善账号信息；&#x000A;2.确保提现账号与用户名保持一致；&#x000A;3.提现时需先选定固定的提现金额；&#x000A;4.提现申请发出后会在2个小时左右打入您的账户；"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

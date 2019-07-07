@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_psd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/input_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_45dp"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="@string/input_psd"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/green_bg"
+            android:textColorHint="@color/dark_gray_txt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_psd_config"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/input_password_sure_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:background="@null"
+            android:gravity="end"
+            android:hint="@string/input_psd"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/green_bg"
+            android:textColorHint="@color/dark_gray_txt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/green_bg"
+        android:text="@string/confirm_update"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_15sp" />
+</LinearLayout>

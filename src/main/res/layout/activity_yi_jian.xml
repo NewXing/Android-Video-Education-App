@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_white"
+        android:padding="@dimen/dimen_20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_toEndOf="@+id/tv_title"
+            android:background="@null"
+            android:hint="@string/input_num"
+            android:maxLength="30"
+            android:paddingBottom="@dimen/dimen_20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray_txt"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/et_title"
+            android:text="0/30" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300dp"
+        android:background="@color/bg_white"
+        android:padding="@dimen/dimen_20dp">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_toEndOf="@+id/tv_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/input_content"
+            android:maxLength="300"
+            android:maxLines="20"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray_txt"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/et_text"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:text="0/300" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_bg"
+        android:text="@string/submit"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_17sp" />
+</LinearLayout>

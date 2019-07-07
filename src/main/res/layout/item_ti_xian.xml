@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_15dp"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ti_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="提现申请"
+            android:textColor="@color/green_bg"
+            android:textSize="@dimen/dimen_18sp" />
+
+        <TextView
+            android:id="@+id/tv_ti_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:text="提现至：支付宝"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ti_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="2012.12.12"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tv_ti_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:text="-100元"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+</LinearLayout>

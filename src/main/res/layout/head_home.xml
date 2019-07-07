@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_55dp"
+    android:id="@+id/ll_layout"
+    android:background="@color/green_bg"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/main_search_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_search_all"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/icon_cons_search"
+        android:gravity="center_vertical"
+        android:text="@string/search_tip"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:textColor="@color/dark_gray_txt"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <ImageButton
+        android:id="@+id/message_btn"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@null"
+        android:padding="@dimen/dimen_15dp"
+        android:src="@drawable/message" />
+</LinearLayout>

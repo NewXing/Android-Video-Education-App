@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_105dp"
+    android:background="@color/ui_comm_bg_color"
+    android:paddingEnd="@dimen/dimen_10dp"
+    android:paddingStart="@dimen/dimen_10dp">
+
+    <education.juxin.com.educationpro.view.RoundImageView
+        android:id="@+id/course_picture_img"
+        android:layout_width="@dimen/dimen_120dp"
+        android:layout_height="@dimen/dimen_80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/course_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/course_picture_img"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginStart="@dimen/dimen_13dp"
+        android:layout_toEndOf="@+id/course_picture_img"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="课程标题"
+        android:textColor="@color/result_view"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <TextView
+        android:id="@+id/course_teacher_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_title_tv"
+        android:layout_marginStart="@dimen/dimen_13dp"
+        android:layout_toEndOf="@+id/course_picture_img"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/teacher_person"
+        android:textColor="@color/inactive_bottom_navigation"
+        android:textSize="@dimen/dimen_13sp" />
+
+    <TextView
+        android:id="@+id/course_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/course_picture_img"
+        android:layout_marginStart="@dimen/dimen_13dp"
+        android:layout_toEndOf="@+id/course_picture_img"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/course_time"
+        android:textColor="@color/inactive_bottom_navigation"
+        android:textSize="@dimen/dimen_13sp" />
+
+    <TextView
+        android:id="@+id/old_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/course_picture_img"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dimen_6dp"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/inactive_bottom_navigation"
+        android:textSize="@dimen/dimen_13sp" />
+
+    <TextView
+        android:id="@+id/new_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/course_picture_img"
+        android:layout_marginStart="@dimen/dimen_13dp"
+        android:layout_toStartOf="@+id/old_price_tv"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/register"
+        android:textSize="@dimen/dimen_13sp" />
+</RelativeLayout>

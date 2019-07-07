@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:background="@color/green_bg" />
+
+        <TextView
+            android:id="@+id/present_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="14dp"
+            android:text="赠送给：黄家驹"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/pay_mode"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/pay_modes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:text="支付宝"
+            android:textColor="@color/green_bg"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <TextView
+        android:id="@+id/tv_course_names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="课程名"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:background="@color/default_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_105dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp">
+
+        <education.juxin.com.educationpro.view.RoundImageView
+            android:id="@+id/img_course_image"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_toEndOf="@+id/img_course_image"
+            android:text="x1"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="-30.00元"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+
+            android:text="2012-12-12 12:12"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:id="@+id/tv_teach_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="主讲人：黄家驹  "
+            android:textSize="@dimen/dimen_15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

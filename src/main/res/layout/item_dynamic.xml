@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <LinearLayout
+        android:id="@+id/ll_collect"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10dp">
+
+        <education.juxin.com.educationpro.view.CircleImageView
+            android:id="@+id/img_view"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/tv_dynamic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:text="TRO BEYOND"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/select_all"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:src="@drawable/sel_all" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:paddingStart="@dimen/dimen_30dp"
+        android:paddingTop="@dimen/dimen_20dp">
+
+        <TextView
+            android:id="@+id/course_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《课程标题》"
+            android:textColor="@color/not_psd"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <education.juxin.com.educationpro.view.RoundImageView
+            android:id="@+id/course_picture_img"
+            android:layout_width="@dimen/dimen_210dp"
+            android:layout_height="@dimen/dimen_140dp"
+            android:layout_below="@+id/course_title_tv"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/is_new_img"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_news" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_picture_img"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/teacher_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主讲人：xxx"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/course_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course_time"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <TextView
+                android:id="@+id/course_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxx"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/dimen_15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

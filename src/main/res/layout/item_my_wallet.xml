@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_10dp">
+
+        <education.juxin.com.educationpro.view.CircleImageView
+            android:id="@+id/img_view_wallet"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/my_wallet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_toEndOf="@+id/img_view_wallet"
+            android:text="购买人昵称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="购买课程"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/dimen_15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_110dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_15dp">
+
+        <education.juxin.com.educationpro.view.RoundImageView
+            android:id="@+id/wallet_book_img"
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/wallet_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_toEndOf="@+id/wallet_book_img"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="关于托福英语的课程"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <TextView
+            android:id="@+id/tv_space_post_01"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_below="@+id/wallet_book_name"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_toEndOf="@+id/wallet_book_img"
+            android:background="@drawable/img_yuan"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="返现"
+            android:textColor="@color/bg_white"
+            android:textSize="@dimen/dimen_9sp" />
+
+        <TextView
+            android:id="@+id/wallet_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:layout_toEndOf="@+id/wallet_book_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="2012.12.12"
+            android:textSize="@dimen/dimen_13sp" />
+
+        <TextView
+            android:id="@+id/tv_wallet_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="+100元"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_16sp" />
+    </RelativeLayout>
+</LinearLayout>

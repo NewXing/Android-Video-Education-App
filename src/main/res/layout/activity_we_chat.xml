@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/real_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/input_user_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:background="@null"
+            android:hint="@string/input_name"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray_txt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_marginStart="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_num"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/input_phone_num_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:background="@null"
+            android:hint="@string/input_tel_number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray_txt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/default_view" />
+
+    <RelativeLayout
+        android:id="@+id/authorization_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70dp"
+        android:layout_marginStart="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@+id/authorize_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="微信授权:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <education.juxin.com.educationpro.view.CircleImageView
+            android:id="@+id/authorization_success_img"
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_toEndOf="@+id/authorize_tv"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/to_grant_authorization_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_toEndOf="@+id/authorization_success_img"
+            android:drawableEnd="@drawable/arrows_right"
+            android:textSize="@dimen/dimen_16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="#efefef" />
+
+    <Button
+        android:id="@+id/sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        android:layout_marginRight="@dimen/dimen_25dp"
+        android:layout_marginTop="@dimen/dimen_55dp"
+        android:background="@drawable/login"
+        android:text="@string/confirm"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/bind_wx_tip"
+        android:textColor="#f00"
+        android:textSize="13sp" />
+</LinearLayout>

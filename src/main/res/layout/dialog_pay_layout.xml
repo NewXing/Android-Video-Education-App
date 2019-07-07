@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:text="@string/send_word"
+                        android:textColor="@color/not_psd"
+                        android:textSize="@dimen/dimen_17sp" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/input_send_word_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:background="@drawable/dialog_input_bg"
+                            android:ellipsize="end"
+                            android:hint="@string/input_send_word"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:paddingBottom="@dimen/dimen_10dp"
+                            android:paddingEnd="@dimen/dimen_10dp"
+                            android:paddingStart="@dimen/dimen_10dp"
+                            android:paddingTop="@dimen/dimen_10dp"
+                            android:textColor="@color/dark_gray_txt"
+                            android:textSize="@dimen/dimen_17sp" />
+
+                        <TextView
+                            android:id="@+id/input_word_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginLeft="@dimen/dimen_5dp"
+                            android:layout_marginRight="@dimen/dimen_5dp"
+                            android:text="0/20"
+                            android:textSize="@dimen/dimen_16sp"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_15dp"
+                    android:orientation="horizontal">
+
+                    <education.juxin.com.educationpro.view.RoundImageView
+                        android:id="@+id/img_gifts"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_marginEnd="@dimen/dimen_10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/each_money_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="99元/个"
+                        android:textColor="@color/not_psd"
+                        android:textSize="@dimen/dimen_17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:text="@string/buy_num"
+                        android:textColor="@color/not_psd"
+                        android:textSize="@dimen/dimen_17sp" />
+
+                    <ImageButton
+                        android:id="@+id/minus_btn"
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:background="@drawable/img_minus" />
+
+                    <EditText
+                        android:id="@+id/input_number_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_15dp"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_input_bg"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/dimen_6dp"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:paddingRight="@dimen/dimen_10dp"
+                        android:paddingTop="@dimen/dimen_6dp"
+                        android:text="@string/buy_default_num"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/dark_gray_txt" />
+
+                    <ImageButton
+                        android:id="@+id/add_btn"
+                        android:layout_width="@dimen/dimen_30dp"
+                        android:layout_height="@dimen/dimen_30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dimen_25dp"
+                        android:background="@drawable/img_add" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_margin="@dimen/dimen_25dp"
+                    android:background="@color/default_view" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/alipay_money"
+                        android:textColor="@color/not_psd"
+                        android:textSize="@dimen/dimen_17sp" />
+
+                    <TextView
+                        android:id="@+id/pay_total_money_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:text="5元"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/dimen_17sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_45dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_25dp"
+                    android:layout_marginRight="@dimen/dimen_25dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/login"
+                    android:gravity="center"
+                    android:text="@string/alipay_confirm"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/dimen_17sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/im_cancel"
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_cancel" />
+</RelativeLayout>

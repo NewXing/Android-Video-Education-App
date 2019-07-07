@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:ignore="WebViewLayout">
+
+    <TextView
+        android:id="@+id/course_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_comm_bg_color"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_15dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="描述"
+        android:textColor="@color/not_psd"
+        android:textSize="@dimen/dimen_17sp" />
+
+    <RelativeLayout
+        android:id="@+id/info_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_comm_bg_color"
+        android:paddingBottom="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_13dp"
+            android:text="￥"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen_20sp" />
+
+        <Button
+            android:id="@+id/share_btn"
+            android:layout_width="@dimen/dimen_23dp"
+            android:layout_height="@dimen/dimen_23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:background="@drawable/share" />
+
+        <Button
+            android:id="@+id/collect_btn"
+            android:layout_width="@dimen/dimen_23dp"
+            android:layout_height="@dimen/dimen_23dp"
+            android:layout_marginEnd="@dimen/dimen_15dp"
+            android:layout_toStartOf="@+id/share_btn"
+            android:background="@drawable/collect" />
+
+
+        <TextView
+            android:id="@+id/teacher_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/price_tv"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:text="主讲人："
+            android:textColor="@color/not_psd"
+            android:textSize="@dimen/dimen_14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/ui_comm_bg_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@+id/course_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/teacher_name_tv"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:text="当前课时：| 总课时："
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15dp"
+            android:paddingRight="@dimen/dimen_15dp"
+            android:text="有效截止时间："
+            android:textColor="@color/dark_gray" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/ui_comm_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_15dp"
+        android:paddingTop="@dimen/dimen_15dp">
+
+        <education.juxin.com.educationpro.view.CircleImageView
+            android:id="@+id/img_teacher"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginLeft="@dimen/dimen_15dp" />
+
+        <TextView
+            android:id="@+id/tv_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:textColor="@color/not_psd"
+            android:textSize="@dimen/dimen_15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/care_btn"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/concern_green_bg"
+            android:text="@string/care_for"
+            android:textColor="@color/green_bg"
+            android:textSize="@dimen/dimen_13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/review_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_comm_bg_color"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <View
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/green_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:text="@string/look_back"
+            android:textColor="@color/not_psd" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/review_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@color/ui_comm_bg_color"
+        android:paddingBottom="@dimen/dimen_15dp" />
+
+    <LinearLayout
+        android:id="@+id/course_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_comm_bg_color"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <View
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/green_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:text="@string/course_introduction"
+            android:textColor="@color/not_psd" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:background="@color/bg_white">
+
+        <education.juxin.com.educationpro.view.CusWebView
+            android:id="@+id/course_introduce_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/look_back_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_comm_bg_color"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <View
+            android:layout_width="@dimen/dimen_3dp"
+            android:layout_height="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:background="@color/green_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:text="@string/look_back_all"
+            android:textColor="@color/not_psd" />
+    </LinearLayout>
+</LinearLayout>

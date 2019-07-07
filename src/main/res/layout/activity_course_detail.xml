@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/root_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/root_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/simple_player_view_player"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <ImageView
+                android:id="@+id/play_end_img"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="@dimen/dimen_80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_media_play_big2" />
+
+            <LinearLayout
+                android:id="@+id/back_money_root_layout"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dimen_175dp"
+                android:background="@drawable/back_money_btn_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="返现金额"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/dimen_13sp" />
+
+                <TextView
+                    android:id="@+id/back_money_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="100元"
+                    android:textColor="@color/bg_white"
+                    android:textSize="@dimen/dimen_12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/head_course_detail"
+            layout="@layout/head_course_detail" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_marginBottom="@dimen/dimen_1dp"
+        android:background="@color/gray_line" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/root_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/review_all_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ui_comm_bg_color" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_buy_course"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/green_bg"
+        android:text="@string/bug_courses"
+        android:textColor="@color/bg_white"
+        android:textSize="@dimen/dimen_15sp" />
+</LinearLayout>
